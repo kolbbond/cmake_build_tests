@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/testex946.dir/tests/test_ClassEx95.cpp.o -o testex946  -Wl,-rpath,/home/ohr4/programs/cpp/lib_creation/build liblib_creation.so 

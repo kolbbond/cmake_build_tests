@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/main.dir/src/main.cpp.o -o main  -Wl,-rpath,/home/ohr4/programs/cpp/lib_creation/build liblib_creation.so 
