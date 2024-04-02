@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/testex473.dir/test_ClassEx523.cpp.o"
+  "CMakeFiles/testex473.dir/test_ClassEx523.cpp.o.d"
+  "testex473"
+  "testex473.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/testex473.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

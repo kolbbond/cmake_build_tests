@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/testex280.dir/tests/test_ClassEx35.cpp.o -o testex280  -Wl,-rpath,/home/ohr4/programs/cpp/lib_creation/build liblib_creation.so 

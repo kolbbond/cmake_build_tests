@@ -1,0 +1,2 @@
+# Empty dependencies file for testex966.
+# This may be replaced when dependencies are built.
