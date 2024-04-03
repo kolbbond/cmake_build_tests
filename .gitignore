@@ -1,1 +1,4 @@
 build/*
+tests/test*
+src/*
+include/*
