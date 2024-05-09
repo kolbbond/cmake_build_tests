@@ -16,8 +16,9 @@ function create_main(num)
 
     -- output to std or file (or both)
     print("creating main .cpp file\n");
+    pwd = os.getenv("PWD")
     local fileN = assert(io.open(
-        "//home//ohr4//programs//cpp//lib_creation//src//main.cpp",
+        pwd .. "//src//main.cpp",
         "w+"));
     fileN:write(str_arr[1][1] .. "\n\n");
     fileN:write(str_arr[1][2] .. "\n\n");

@@ -20,6 +20,8 @@ rm tests/test_ClassEx*
 echo -e "${Red}In ${0} Creating a test project with${NC}"
 printf "${Blue}%s${NC}\n" "${num_files} files"
 
+#set THIS_PATH=~/
+
 # generate sources with lua
 lua create_sources.lua ${num_files}
 
