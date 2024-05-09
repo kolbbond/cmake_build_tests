@@ -2,21 +2,12 @@ cmake_minimum_required(VERSION 3.6)
 
 project(lib_creation)
 
-# find packages
-# find_package(Lua 5.4 REQUIRED)
-
-# printVariables()
-
 # get all source files
 file(GLOB SRC_FILES
     "src/*.cpp"
 )
 
-#target_sources(${PROJECT_NAME} PUBLIC
-#   ${SRC_FILES}
-#)
 
-#target_include_directories(${PROJECT_NAME} PRIVATE "include")
 include_directories(include)
 
 # make our library
