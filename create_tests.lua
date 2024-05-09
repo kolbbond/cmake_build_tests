@@ -16,10 +16,12 @@ function create_tests(num)
 
     -- output to std or file (or both)
     print("creating tests .cpp files\n");
+    pwd = os.getenv("PWD");
     for i = 1, num do
-        local fileN = assert(io.open(
-            "//home//ohr4//programs//cpp//lib_creation//tests//test_ClassEx"
-            .. i .. ".cpp", "w+"));
+        full_path = pwd .. "/tests/test_ClassEx" .. i .. ".cpp";
+        full_path = full_path:gsub("/", "//"); -- escape slashes
+        local fileN = assert(io.open(full_path,
+            "w+"));
         fileN:write(str_arr[i][1] .. "\n");
         fileN:write(str_arr[i][2] .. "\n");
         fileN:write(str_arr[i][3] .. "\n");

@@ -15,16 +15,17 @@ function create_sources(num)
 
     -- output to std or file (or both)
     print("creating source .cpp files\n");
-    --local fileAll = assert(io.open("src/ClassExN.cpp", "w+"));
+    pwd = os.getenv("PWD");
     for i = 1, num do
-        local fileN = assert(io.open(
-            "//home//ohr4//programs//cpp//lib_creation//src//ClassEx"
-            .. i .. ".cpp", "w+"));
+        full_path = pwd .. "/src/ClassEx" .. i .. ".cpp";
+        full_path = full_path:gsub("/", "//"); -- escape slashes
+
+        local fileN = assert(io.open(full_path,
+            "w+"));
         fileN:write(str_arr[i][1] .. "\n");
         fileN:write(str_arr[i][2] .. "\n");
         fileN:write(str_arr[i][3] .. "\n");
         fileN:write(str_arr[i][4] .. "\n");
-
     end
 end
 

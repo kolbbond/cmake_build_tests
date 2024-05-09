@@ -16,10 +16,14 @@ function create_main(num)
 
     -- output to std or file (or both)
     print("creating main .cpp file\n");
-    pwd = os.getenv("PWD")
-    local fileN = assert(io.open(
-        pwd .. "//src//main.cpp",
+    pwd = os.getenv("PWD");
+    full_path = pwd .. "/src/main.cpp";
+    full_path = full_path:gsub("/", "//");
+    print("creating: " .. full_path);
+
+    local fileN = assert(io.open(full_path,
         "w+"));
+
     fileN:write(str_arr[1][1] .. "\n\n");
     fileN:write(str_arr[1][2] .. "\n\n");
     --local fileAll = assert(io.open("src/ClassExN.cpp", "w+"));

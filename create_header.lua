@@ -14,10 +14,13 @@ function create_header(num)
     end
 
     -- output to std or file (or both)
+    pwd = os.getenv("PWD");
+    full_path = pwd .. "/include/creationlib.hh";
+    full_path = full_path:gsub("/", "//"); -- escape slashes
     print("creating header .hh file\n");
-    local fileN = assert(io.open(
-        "//home//ohr4//programs//cpp//lib_creation//include//creationlib.hh",
+    local fileN = assert(io.open(full_path,
         "w+"));
+
     fileN:write(str_arr[1][1] .. "\n");
     fileN:write(str_arr[1][2] .. "\n\n");
     --local fileAll = assert(io.open("src/ClassExN.cpp", "w+"));
